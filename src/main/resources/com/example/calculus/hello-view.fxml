@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.calculus.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="199.0" prefWidth="221.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculus.HelloController">
+
+      <TextField fx:id="Val1" layoutX="34.0" layoutY="33.0" />
+      <TextField fx:id="Val2" layoutX="34.0" layoutY="72.0" />
+      <TextField fx:id="Val3" layoutX="34.0" layoutY="150.0" />
+      <Button layoutX="34.0" layoutY="115.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="149.0" onAction="#calc" text="Button" />
+   
+</AnchorPane>
