@@ -1,15 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="500.0" maxWidth="416.0" minHeight="500.0" minWidth="416.0" prefHeight="500.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.compsalts.HelloController">
+      <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcecec" height="390.0" layoutX="149.0" layoutY="36.0" stroke="#f5eaea" strokeType="INSIDE" width="257.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fceae9" height="62.0" layoutX="7.0" layoutY="430.0" stroke="BLACK" strokeType="INSIDE" width="134.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9e4ee" height="390.0" layoutX="7.0" layoutY="37.0" stroke="#f6f6ff" strokeType="INSIDE" width="134.0" />
+            <TextField fx:id="Val1" layoutX="21.0" layoutY="57.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val2" layoutX="21.0" layoutY="104.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val3" layoutX="21.0" layoutY="152.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val4" layoutX="21.0" layoutY="200.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val5" layoutX="21.0" layoutY="248.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val6" layoutX="21.0" layoutY="295.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val7" layoutX="21.0" layoutY="341.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val8" layoutX="21.0" layoutY="454.0" prefHeight="25.0" prefWidth="100.0" />
+            <Button layoutX="21.0" layoutY="387.0" mnemonicParsing="false" onAction="#calc" prefHeight="25.0" prefWidth="100.0" text="Calculate" />
+            <TextField fx:id="Val9" layoutX="162.0" layoutY="104.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val10" layoutX="162.0" layoutY="152.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val11" layoutX="162.0" layoutY="200.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val12" layoutX="162.0" layoutY="248.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val13" layoutX="162.0" layoutY="295.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val14" layoutX="162.0" layoutY="341.0" prefHeight="25.0" prefWidth="100.0" />
+            <Text fill="#0330f5" layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Data" />
+            <Text fill="#f50202" layoutX="215.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results of Calculations" />
+            <TextField fx:id="Val15" layoutX="291.0" layoutY="57.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val16" layoutX="291.0" layoutY="104.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val17" layoutX="291.0" layoutY="152.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val18" layoutX="291.0" layoutY="200.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val19" layoutX="291.0" layoutY="248.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val20" layoutX="291.0" layoutY="295.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="Val21" layoutX="291.0" layoutY="341.0" prefHeight="25.0" prefWidth="100.0" />
+            <Label fx:id="l1" layoutX="21.0" layoutY="39.0" text="Na, [mg/L]" />
+            <Label fx:id="l2" layoutX="21.0" layoutY="85.0" text="K, [mg/L]" />
+            <Label fx:id="l3" layoutX="21.0" layoutY="133.0" text="Mg, [mg/L]" />
+            <Label fx:id="l31" layoutX="21.0" layoutY="181.0" text="Ca, [mg/L]" />
+            <Label fx:id="l311" layoutX="21.0" layoutY="230.0" text="Cl, [mg/L]" />
+            <Label fx:id="l3111" layoutX="22.0" layoutY="277.0" text="SO4, [mg/L]" />
+            <Label fx:id="l31111" layoutX="21.0" layoutY="323.0" text="HCO3, [mg/L]" />
+            <Label fx:id="l311111" layoutX="21.0" layoutY="437.0" text="Charge, [mol/L]" />
+            <Label fx:id="l311112" layoutX="162.0" layoutY="85.0" text="KCl, [mg/L]" />
+            <Label fx:id="l3111121" layoutX="162.0" layoutY="134.0" text="MgCl2, [mg/L]" />
+            <Label fx:id="l31111211" layoutX="162.0" layoutY="182.0" text="MgCO3, [mg/L]" />
+            <Label fx:id="l311112111" layoutX="162.0" layoutY="230.0" text="CaCO3, [mg/L]" />
+            <Label fx:id="l3111121111" layoutX="162.0" layoutY="277.0" text="Na2SO4, [mg/L]" />
+            <Label fx:id="l31111211111" layoutX="162.0" layoutY="323.0" text="NaHCO3, [mg/L]" />
+            <Label fx:id="l11" layoutX="291.0" layoutY="39.0" text="Na, [mg/L]" />
+            <Label fx:id="l21" layoutX="291.0" layoutY="85.0" text="K, [mg/L]" />
+            <Label fx:id="l32" layoutX="292.0" layoutY="133.0" text="Mg, [mg/L]" />
+            <Label fx:id="l312" layoutX="292.0" layoutY="182.0" text="Ca, [mg/L]" />
+            <Label fx:id="l3112" layoutX="292.0" layoutY="231.0" text="Cl, [mg/L]" />
+            <Label fx:id="l31112" layoutX="292.0" layoutY="278.0" text="SO4, [mg/L]" />
+            <Label fx:id="l311113" layoutX="292.0" layoutY="325.0" text="HCO3, [mg/L]" />
+            <Hyperlink fx:id="h11" layoutX="299.0" layoutY="438.0" onAction="#link1" text="СПбО ИГЭ РАН" />
+            <Hyperlink fx:id="hl2" layoutX="291.0" layoutY="463.0" onAction="#link2" text="k.rozov@hgepro.ru" />
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="199.0" prefWidth="221.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculus.HelloController">
-
-      <TextField fx:id="Val1" layoutX="34.0" layoutY="33.0" />
-      <TextField fx:id="Val2" layoutX="34.0" layoutY="72.0" />
-      <TextField fx:id="Val3" layoutX="34.0" layoutY="150.0" />
-      <Button layoutX="34.0" layoutY="115.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="149.0" onAction="#calc" text="Button" />
-   
-</AnchorPane>
+      </children>
+</Pane>
